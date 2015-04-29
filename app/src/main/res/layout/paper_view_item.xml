@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@drawable/header_image"
+            style="@style/PaperViewHeader" />
+        <View
+            android:background="@drawable/tape_image"
+            style="@style/PaperViewHeader" />
+        <View
+            android:background="@drawable/header_image"
+            style="@style/PaperViewHeader" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/item_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_drawing"
+            style="@style/PaperViewDrawing" />
+
+        <TextView
+            android:id="@+id/text_caption"
+            style="@style/PaperViewCaption"/>
+
+        <TextView
+            android:id="@+id/text_username"
+            style="@style/PaperViewAttribution"/>
+
+    </LinearLayout>
+</LinearLayout>
